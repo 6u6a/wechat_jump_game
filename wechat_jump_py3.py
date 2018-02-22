@@ -25,7 +25,7 @@ cor = []
 
 
 def jump(distance, pos):
-    press_time = int(distance * 2.093) #涉及到系数的调整
+    press_time = int(distance * 1.3915) #涉及到系数的调整
     print (press_time)
     press_time = int(random.uniform(press_time - 0.002, press_time + 0.002))
     print (press_time)

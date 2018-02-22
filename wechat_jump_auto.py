@@ -1,19 +1,19 @@
-# -*- coding: utf-8 -*-
+# -*- coding: gbk -*-
 
 """
-=== æ€è·¯ ===
-æ ¸å¿ƒï¼šæ¯æ¬¡è½ç¨³ä¹‹åæˆªå›¾ï¼Œæ ¹æ®æˆªå›¾ç®—å‡ºæ£‹å­çš„åæ ‡å’Œä¸‹ä¸€ä¸ªå—é¡¶é¢çš„ä¸­ç‚¹åæ ‡ï¼Œ
-    æ ¹æ®ä¸¤ä¸ªç‚¹çš„è·ç¦»ä¹˜ä»¥ä¸€ä¸ªæ—¶é—´ç³»æ•°è·å¾—é•¿æŒ‰çš„æ—¶é—´
-è¯†åˆ«æ£‹å­ï¼šé æ£‹å­çš„é¢œè‰²æ¥è¯†åˆ«ä½ç½®ï¼Œé€šè¿‡æˆªå›¾å‘ç°æœ€ä¸‹é¢ä¸€è¡Œå¤§æ¦‚æ˜¯ä¸€æ¡
-    ç›´çº¿ï¼Œå°±ä»ä¸Šå¾€ä¸‹ä¸€è¡Œä¸€è¡Œéå†ï¼Œæ¯”è¾ƒé¢œè‰²ï¼ˆé¢œè‰²ç”¨äº†ä¸€ä¸ªåŒºé—´æ¥æ¯”è¾ƒï¼‰
-    æ‰¾åˆ°æœ€ä¸‹é¢çš„é‚£ä¸€è¡Œçš„æ‰€æœ‰ç‚¹ï¼Œç„¶åæ±‚ä¸ªä¸­ç‚¹ï¼Œæ±‚å¥½ä¹‹åå†è®© Y è½´åæ ‡
-    å‡å°æ£‹å­åº•ç›˜çš„ä¸€åŠé«˜åº¦ä»è€Œå¾—åˆ°ä¸­å¿ƒç‚¹çš„åæ ‡
-è¯†åˆ«æ£‹ç›˜ï¼šé åº•è‰²å’Œæ–¹å—çš„è‰²å·®æ¥åšï¼Œä»åˆ†æ•°ä¹‹ä¸‹çš„ä½ç½®å¼€å§‹ï¼Œä¸€è¡Œä¸€è¡Œæ‰«æï¼Œ
-    ç”±äºåœ†å½¢çš„å—æœ€é¡¶ä¸Šæ˜¯ä¸€æ¡çº¿ï¼Œæ–¹å½¢çš„ä¸Šé¢å¤§æ¦‚æ˜¯ä¸€ä¸ªç‚¹ï¼Œæ‰€ä»¥å°±
-    ç”¨ç±»ä¼¼è¯†åˆ«æ£‹å­çš„åšæ³•å¤šè¯†åˆ«äº†å‡ ä¸ªç‚¹æ±‚ä¸­ç‚¹ï¼Œè¿™æ—¶å€™å¾—åˆ°äº†å—ä¸­ç‚¹çš„ X
-    è½´åæ ‡ï¼Œè¿™æ—¶å€™å‡è®¾ç°åœ¨æ£‹å­åœ¨å½“å‰å—çš„ä¸­å¿ƒï¼Œæ ¹æ®ä¸€ä¸ªé€šè¿‡æˆªå›¾è·å–çš„
-    å›ºå®šçš„è§’åº¦æ¥æ¨å‡ºä¸­ç‚¹çš„ Y åæ ‡
-æœ€åï¼šæ ¹æ®ä¸¤ç‚¹çš„åæ ‡ç®—è·ç¦»ä¹˜ä»¥ç³»æ•°æ¥è·å–é•¿æŒ‰æ—¶é—´ï¼ˆä¼¼ä¹å¯ä»¥ç›´æ¥ç”¨ X è½´è·ç¦»ï¼‰
+=== Ë¼Â· ===
+ºËĞÄ£ºÃ¿´ÎÂäÎÈÖ®ºó½ØÍ¼£¬¸ù¾İ½ØÍ¼Ëã³öÆå×ÓµÄ×ø±êºÍÏÂÒ»¸ö¿é¶¥ÃæµÄÖĞµã×ø±ê£¬
+    ¸ù¾İÁ½¸öµãµÄ¾àÀë³ËÒÔÒ»¸öÊ±¼äÏµÊı»ñµÃ³¤°´µÄÊ±¼ä
+Ê¶±ğÆå×Ó£º¿¿Æå×ÓµÄÑÕÉ«À´Ê¶±ğÎ»ÖÃ£¬Í¨¹ı½ØÍ¼·¢ÏÖ×îÏÂÃæÒ»ĞĞ´ó¸ÅÊÇÒ»Ìõ
+    Ö±Ïß£¬¾Í´ÓÉÏÍùÏÂÒ»ĞĞÒ»ĞĞ±éÀú£¬±È½ÏÑÕÉ«£¨ÑÕÉ«ÓÃÁËÒ»¸öÇø¼äÀ´±È½Ï£©
+    ÕÒµ½×îÏÂÃæµÄÄÇÒ»ĞĞµÄËùÓĞµã£¬È»ºóÇó¸öÖĞµã£¬ÇóºÃÖ®ºóÔÙÈÃ Y Öá×ø±ê
+    ¼õĞ¡Æå×Óµ×ÅÌµÄÒ»°ë¸ß¶È´Ó¶øµÃµ½ÖĞĞÄµãµÄ×ø±ê
+Ê¶±ğÆåÅÌ£º¿¿µ×É«ºÍ·½¿éµÄÉ«²îÀ´×ö£¬´Ó·ÖÊıÖ®ÏÂµÄÎ»ÖÃ¿ªÊ¼£¬Ò»ĞĞÒ»ĞĞÉ¨Ãè£¬
+    ÓÉÓÚÔ²ĞÎµÄ¿é×î¶¥ÉÏÊÇÒ»ÌõÏß£¬·½ĞÎµÄÉÏÃæ´ó¸ÅÊÇÒ»¸öµã£¬ËùÒÔ¾Í
+    ÓÃÀàËÆÊ¶±ğÆå×ÓµÄ×ö·¨¶àÊ¶±ğÁË¼¸¸öµãÇóÖĞµã£¬ÕâÊ±ºòµÃµ½ÁË¿éÖĞµãµÄ X
+    Öá×ø±ê£¬ÕâÊ±ºò¼ÙÉèÏÖÔÚÆå×ÓÔÚµ±Ç°¿éµÄÖĞĞÄ£¬¸ù¾İÒ»¸öÍ¨¹ı½ØÍ¼»ñÈ¡µÄ
+    ¹Ì¶¨µÄ½Ç¶ÈÀ´ÍÆ³öÖĞµãµÄ Y ×ø±ê
+×îºó£º¸ù¾İÁ½µãµÄ×ø±êËã¾àÀë³ËÒÔÏµÊıÀ´»ñÈ¡³¤°´Ê±¼ä£¨ËÆºõ¿ÉÒÔÖ±½ÓÓÃ X Öá¾àÀë£©
 """
 from __future__ import print_function, division
 import os
@@ -27,48 +27,49 @@ try:
     from common import debug, config, screenshot
 except Exception as ex:
     print(ex)
-    print('è¯·å°†è„šæœ¬æ”¾åœ¨é¡¹ç›®æ ¹ç›®å½•ä¸­è¿è¡Œ')
-    print('è¯·æ£€æŸ¥é¡¹ç›®æ ¹ç›®å½•ä¸­çš„ common æ–‡ä»¶å¤¹æ˜¯å¦å­˜åœ¨')
+    print('Çë½«½Å±¾·ÅÔÚÏîÄ¿¸ùÄ¿Â¼ÖĞÔËĞĞ')
+    print('Çë¼ì²éÏîÄ¿¸ùÄ¿Â¼ÖĞµÄ common ÎÄ¼ş¼ĞÊÇ·ñ´æÔÚ')
     exit(-1)
 
 
 VERSION = "1.1.1"
 
-# DEBUG å¼€å…³ï¼Œéœ€è¦è°ƒè¯•çš„æ—¶å€™è¯·æ”¹ä¸º Trueï¼Œä¸éœ€è¦è°ƒè¯•çš„æ—¶å€™ä¸º False
-DEBUG_SWITCH = False
+# DEBUG ¿ª¹Ø£¬ĞèÒªµ÷ÊÔµÄÊ±ºòÇë¸ÄÎª True£¬²»ĞèÒªµ÷ÊÔµÄÊ±ºòÎª False
+DEBUG_SWITCH = True#False
 
 
-# Magic Numberï¼Œä¸è®¾ç½®å¯èƒ½æ— æ³•æ­£å¸¸æ‰§è¡Œï¼Œè¯·æ ¹æ®å…·ä½“æˆªå›¾ä»ä¸Šåˆ°ä¸‹æŒ‰éœ€
-# è®¾ç½®ï¼Œè®¾ç½®ä¿å­˜åœ¨ config æ–‡ä»¶å¤¹ä¸­
+# Magic Number£¬²»ÉèÖÃ¿ÉÄÜÎŞ·¨Õı³£Ö´ĞĞ£¬Çë¸ù¾İ¾ßÌå½ØÍ¼´ÓÉÏµ½ÏÂ°´Ğè
+# ÉèÖÃ£¬ÉèÖÃ±£´æÔÚ config ÎÄ¼ş¼ĞÖĞ
 config = config.open_accordant_config()
 under_game_score_y = config['under_game_score_y']
-# é•¿æŒ‰çš„æ—¶é—´ç³»æ•°ï¼Œè¯·è‡ªå·±æ ¹æ®å®é™…æƒ…å†µè°ƒèŠ‚
+# ³¤°´µÄÊ±¼äÏµÊı£¬Çë×Ô¼º¸ù¾İÊµ¼ÊÇé¿öµ÷½Ú
 press_coefficient = config['press_coefficient']
-# äºŒåˆ†ä¹‹ä¸€çš„æ£‹å­åº•åº§é«˜åº¦ï¼Œå¯èƒ½è¦è°ƒèŠ‚
+# ¶ş·ÖÖ®Ò»µÄÆå×Óµ××ù¸ß¶È£¬¿ÉÄÜÒªµ÷½Ú
 piece_base_height_1_2 = config['piece_base_height_1_2']
-# æ£‹å­çš„å®½åº¦ï¼Œæ¯”æˆªå›¾ä¸­é‡åˆ°çš„ç¨å¾®å¤§ä¸€ç‚¹æ¯”è¾ƒå®‰å…¨ï¼Œå¯èƒ½è¦è°ƒèŠ‚
+# Æå×ÓµÄ¿í¶È£¬±È½ØÍ¼ÖĞÁ¿µ½µÄÉÔÎ¢´óÒ»µã±È½Ï°²È«£¬¿ÉÄÜÒªµ÷½Ú
 piece_body_width = config['piece_body_width']
 
 
 def set_button_position(im):
     """
-    å°† swipe è®¾ç½®ä¸º `å†æ¥ä¸€å±€` æŒ‰é’®çš„ä½ç½®
+    ½« swipe ÉèÖÃÎª `ÔÙÀ´Ò»¾Ö` °´Å¥µÄÎ»ÖÃ
     """
     global swipe_x1, swipe_y1, swipe_x2, swipe_y2
     w, h = im.size
     left = int(w / 2)
     top = int(1584 * (h / 1920.0))
     left = int(random.uniform(left-50, left+50))
-    top = int(random.uniform(top-10, top+10))    # éšæœºé˜² ban
+    top = int(random.uniform(top-10, top+10))    # Ëæ»ú·À ban
     swipe_x1, swipe_y1, swipe_x2, swipe_y2 = left, top, left, top
 
 
 def jump(distance):
     """
-    è·³è·ƒä¸€å®šçš„è·ç¦»
+    ÌøÔ¾Ò»¶¨µÄ¾àÀë
     """
     press_time = distance * press_coefficient
-    press_time = max(press_time, 200)   # è®¾ç½® 200ms æ˜¯æœ€å°çš„æŒ‰å‹æ—¶é—´
+    print ("press_coefficient:",press_coefficient)
+    press_time = max(press_time, 200)   # ÉèÖÃ 200ms ÊÇ×îĞ¡µÄ°´Ñ¹Ê±¼ä
     press_time = int(press_time)
     cmd = 'adb shell input swipe {x1} {y1} {x2} {y2} {duration}'.format(
         x1=swipe_x1,
@@ -84,7 +85,7 @@ def jump(distance):
 
 def find_piece_and_board(im):
     """
-    å¯»æ‰¾å…³é”®åæ ‡
+    Ñ°ÕÒ¹Ø¼ü×ø±ê
     """
     w, h = im.size
 
@@ -93,15 +94,15 @@ def find_piece_and_board(im):
     piece_y_max = 0
     board_x = 0
     board_y = 0
-    scan_x_border = int(w / 8)  # æ‰«ææ£‹å­æ—¶çš„å·¦å³è¾¹ç•Œ
-    scan_start_y = 0  # æ‰«æçš„èµ·å§‹ y åæ ‡
+    scan_x_border = int(w / 8)  # É¨ÃèÆå×ÓÊ±µÄ×óÓÒ±ß½ç
+    scan_start_y = 0  # É¨ÃèµÄÆğÊ¼ y ×ø±ê
     im_pixel = im.load()
-    # ä»¥ 50px æ­¥é•¿ï¼Œå°è¯•æ¢æµ‹ scan_start_y
+    # ÒÔ 50px ²½³¤£¬³¢ÊÔÌ½²â scan_start_y
     for i in range(int(h / 3), int(h*2 / 3), 50):
         last_pixel = im_pixel[0, i]
         for j in range(1, w):
             pixel = im_pixel[j, i]
-            # ä¸æ˜¯çº¯è‰²çš„çº¿ï¼Œåˆ™è®°å½• scan_start_y çš„å€¼ï¼Œå‡†å¤‡è·³å‡ºå¾ªç¯
+            # ²»ÊÇ´¿É«µÄÏß£¬Ôò¼ÇÂ¼ scan_start_y µÄÖµ£¬×¼±¸Ìø³öÑ­»·
             if pixel != last_pixel:
                 scan_start_y = i - 50
                 break
@@ -109,13 +110,13 @@ def find_piece_and_board(im):
             break
     print('scan_start_y: {}'.format(scan_start_y))
 
-    # ä» scan_start_y å¼€å§‹å¾€ä¸‹æ‰«æï¼Œæ£‹å­åº”ä½äºå±å¹•ä¸ŠåŠéƒ¨åˆ†ï¼Œè¿™é‡Œæš‚å®šä¸è¶…è¿‡ 2/3
+    # ´Ó scan_start_y ¿ªÊ¼ÍùÏÂÉ¨Ãè£¬Æå×ÓÓ¦Î»ÓÚÆÁÄ»ÉÏ°ë²¿·Ö£¬ÕâÀïÔİ¶¨²»³¬¹ı 2/3
     for i in range(scan_start_y, int(h * 2 / 3)):
-        # æ¨ªåæ ‡æ–¹é¢ä¹Ÿå‡å°‘äº†ä¸€éƒ¨åˆ†æ‰«æå¼€é”€
+        # ºá×ø±ê·½ÃæÒ²¼õÉÙÁËÒ»²¿·ÖÉ¨Ãè¿ªÏú
         for j in range(scan_x_border, w - scan_x_border):
             pixel = im_pixel[j, i]
-            # æ ¹æ®æ£‹å­çš„æœ€ä½è¡Œçš„é¢œè‰²åˆ¤æ–­ï¼Œæ‰¾æœ€åä¸€è¡Œé‚£äº›ç‚¹çš„å¹³å‡å€¼ï¼Œè¿™ä¸ªé¢œ
-            # è‰²è¿™æ ·åº”è¯¥ OKï¼Œæš‚æ—¶ä¸æå‡ºæ¥
+            # ¸ù¾İÆå×ÓµÄ×îµÍĞĞµÄÑÕÉ«ÅĞ¶Ï£¬ÕÒ×îºóÒ»ĞĞÄÇĞ©µãµÄÆ½¾ùÖµ£¬Õâ¸öÑÕ
+            # É«ÕâÑùÓ¦¸Ã OK£¬ÔİÊ±²»Ìá³öÀ´
             if (50 < pixel[0] < 60) \
                     and (53 < pixel[1] < 63) \
                     and (95 < pixel[2] < 110):
@@ -126,9 +127,9 @@ def find_piece_and_board(im):
     if not all((piece_x_sum, piece_x_c)):
         return 0, 0, 0, 0
     piece_x = int(piece_x_sum / piece_x_c)
-    piece_y = piece_y_max - piece_base_height_1_2  # ä¸Šç§»æ£‹å­åº•ç›˜é«˜åº¦çš„ä¸€åŠ
+    piece_y = piece_y_max - piece_base_height_1_2  # ÉÏÒÆÆå×Óµ×ÅÌ¸ß¶ÈµÄÒ»°ë
 
-    # é™åˆ¶æ£‹ç›˜æ‰«æçš„æ¨ªåæ ‡ï¼Œé¿å…éŸ³ç¬¦ bug
+    # ÏŞÖÆÆåÅÌÉ¨ÃèµÄºá×ø±ê£¬±ÜÃâÒô·û bug
     if piece_x < w/2:
         board_x_start = piece_x
         board_x_end = w
@@ -145,11 +146,11 @@ def find_piece_and_board(im):
 
         for j in range(int(board_x_start), int(board_x_end)):
             pixel = im_pixel[j, i]
-            # ä¿®æ‰è„‘è¢‹æ¯”ä¸‹ä¸€ä¸ªå°æ ¼å­è¿˜é«˜çš„æƒ…å†µçš„ bug
+            # ĞŞµôÄÔ´ü±ÈÏÂÒ»¸öĞ¡¸ñ×Ó»¹¸ßµÄÇé¿öµÄ bug
             if abs(j - piece_x) < piece_body_width:
                 continue
 
-            # ä¿®æ‰åœ†é¡¶çš„æ—¶å€™ä¸€æ¡çº¿å¯¼è‡´çš„å° bugï¼Œè¿™ä¸ªé¢œè‰²åˆ¤æ–­åº”è¯¥ OKï¼Œæš‚æ—¶ä¸æå‡ºæ¥
+            # ĞŞµôÔ²¶¥µÄÊ±ºòÒ»ÌõÏßµ¼ÖÂµÄĞ¡ bug£¬Õâ¸öÑÕÉ«ÅĞ¶ÏÓ¦¸Ã OK£¬ÔİÊ±²»Ìá³öÀ´
             if abs(pixel[0] - last_pixel[0]) \
                     + abs(pixel[1] - last_pixel[1]) \
                     + abs(pixel[2] - last_pixel[2]) > 10:
@@ -159,10 +160,10 @@ def find_piece_and_board(im):
             board_x = board_x_sum / board_x_c
     last_pixel = im_pixel[board_x, i]
 
-    # ä»ä¸Šé¡¶ç‚¹å¾€ä¸‹ +274 çš„ä½ç½®å¼€å§‹å‘ä¸Šæ‰¾é¢œè‰²ä¸ä¸Šé¡¶ç‚¹ä¸€æ ·çš„ç‚¹ï¼Œä¸ºä¸‹é¡¶ç‚¹
-    # è¯¥æ–¹æ³•å¯¹æ‰€æœ‰çº¯è‰²å¹³é¢å’Œéƒ¨åˆ†éçº¯è‰²å¹³é¢æœ‰æ•ˆï¼Œå¯¹é«˜å°”å¤«è‰åªé¢ã€æœ¨çº¹æ¡Œé¢ã€
-    # è¯ç“¶å’Œéè±å½¢çš„ç¢Ÿæœºï¼ˆå¥½åƒæ˜¯ï¼‰ä¼šåˆ¤æ–­é”™è¯¯
-    for k in range(i+274, i, -1):  # 274 å–å¼€å±€æ—¶æœ€å¤§çš„æ–¹å—çš„ä¸Šä¸‹é¡¶ç‚¹è·ç¦»
+    # ´ÓÉÏ¶¥µãÍùÏÂ +274 µÄÎ»ÖÃ¿ªÊ¼ÏòÉÏÕÒÑÕÉ«ÓëÉÏ¶¥µãÒ»ÑùµÄµã£¬ÎªÏÂ¶¥µã
+    # ¸Ã·½·¨¶ÔËùÓĞ´¿É«Æ½ÃæºÍ²¿·Ö·Ç´¿É«Æ½ÃæÓĞĞ§£¬¶Ô¸ß¶û·ò²İÆºÃæ¡¢Ä¾ÎÆ×ÀÃæ¡¢
+    # Ò©Æ¿ºÍ·ÇÁâĞÎµÄµú»ú£¨ºÃÏñÊÇ£©»áÅĞ¶Ï´íÎó
+    for k in range(i+274, i, -1):  # 274 È¡¿ª¾ÖÊ±×î´óµÄ·½¿éµÄÉÏÏÂ¶¥µã¾àÀë
         pixel = im_pixel[board_x, k]
         if abs(pixel[0] - last_pixel[0]) \
                 + abs(pixel[1] - last_pixel[1]) \
@@ -170,10 +171,10 @@ def find_piece_and_board(im):
             break
     board_y = int((i+k) / 2)
 
-    # å¦‚æœä¸Šä¸€è·³å‘½ä¸­ä¸­é—´ï¼Œåˆ™ä¸‹ä¸ªç›®æ ‡ä¸­å¿ƒä¼šå‡ºç° r245 g245 b245 çš„ç‚¹ï¼Œåˆ©ç”¨è¿™ä¸ª
-    # å±æ€§å¼¥è¡¥ä¸Šä¸€æ®µä»£ç å¯èƒ½å­˜åœ¨çš„åˆ¤æ–­é”™è¯¯
-    # è‹¥ä¸Šä¸€è·³ç”±äºæŸç§åŸå› æ²¡æœ‰è·³åˆ°æ­£ä¸­é—´ï¼Œè€Œä¸‹ä¸€è·³æ°å¥½æœ‰æ— æ³•æ­£ç¡®è¯†åˆ«èŠ±çº¹ï¼Œåˆ™æœ‰
-    # å¯èƒ½æ¸¸æˆå¤±è´¥ï¼Œç”±äºèŠ±çº¹é¢ç§¯é€šå¸¸æ¯”è¾ƒå¤§ï¼Œå¤±è´¥æ¦‚ç‡è¾ƒä½
+    # Èç¹ûÉÏÒ»ÌøÃüÖĞÖĞ¼ä£¬ÔòÏÂ¸öÄ¿±êÖĞĞÄ»á³öÏÖ r245 g245 b245 µÄµã£¬ÀûÓÃÕâ¸ö
+    # ÊôĞÔÃÖ²¹ÉÏÒ»¶Î´úÂë¿ÉÄÜ´æÔÚµÄÅĞ¶Ï´íÎó
+    # ÈôÉÏÒ»ÌøÓÉÓÚÄ³ÖÖÔ­ÒòÃ»ÓĞÌøµ½ÕıÖĞ¼ä£¬¶øÏÂÒ»ÌøÇ¡ºÃÓĞÎŞ·¨ÕıÈ·Ê¶±ğ»¨ÎÆ£¬ÔòÓĞ
+    # ¿ÉÄÜÓÎÏ·Ê§°Ü£¬ÓÉÓÚ»¨ÎÆÃæ»ıÍ¨³£±È½Ï´ó£¬Ê§°Ü¸ÅÂÊ½ÏµÍ
     for j in range(i, i+200):
         pixel = im_pixel[board_x, j]
         if abs(pixel[0] - 245) + abs(pixel[1] - 245) + abs(pixel[2] - 245) == 0:
@@ -187,7 +188,7 @@ def find_piece_and_board(im):
 
 def yes_or_no(prompt, true_value='y', false_value='n', default=True):
     """
-    æ£€æŸ¥æ˜¯å¦å·²ç»ä¸ºå¯åŠ¨ç¨‹åºåšå¥½äº†å‡†å¤‡
+    ¼ì²éÊÇ·ñÒÑ¾­ÎªÆô¶¯³ÌĞò×öºÃÁË×¼±¸
     """
     default_value = true_value if default else false_value
     prompt = '{} {}/{} [{}]: '.format(prompt, true_value,
@@ -206,26 +207,27 @@ def yes_or_no(prompt, true_value='y', false_value='n', default=True):
 
 def main():
     """
-    ä¸»å‡½æ•°
+    Ö÷º¯Êı
     """
-    op = yes_or_no('è¯·ç¡®ä¿æ‰‹æœºæ‰“å¼€äº† ADB å¹¶è¿æ¥äº†ç”µè„‘ï¼Œ'
-                   'ç„¶åæ‰“å¼€è·³ä¸€è·³å¹¶ã€å¼€å§‹æ¸¸æˆã€‘åå†ç”¨æœ¬ç¨‹åºï¼Œç¡®å®šå¼€å§‹ï¼Ÿ')
+    op = yes_or_no('ÇëÈ·±£ÊÖ»ú´ò¿ªÁË ADB ²¢Á¬½ÓÁËµçÄÔ£¬'
+                   'È»ºó´ò¿ªÌøÒ»Ìø²¢¡¾¿ªÊ¼ÓÎÏ·¡¿ºóÔÙÓÃ±¾³ÌĞò£¬È·¶¨¿ªÊ¼£¿')
     if not op:
         print('bye')
         return
-    print('ç¨‹åºç‰ˆæœ¬å·ï¼š{}'.format(VERSION))
+    print('³ÌĞò°æ±¾ºÅ£º{}'.format(VERSION))
     debug.dump_device_info()
     screenshot.check_screenshot()
 
     i, next_rest, next_rest_time = (0, random.randrange(3, 10),
                                     random.randrange(5, 10))
     while True:
+        pre_ts = time.time()
         screenshot.pull_screenshot()
         im = Image.open('./autojump.png')
-        # è·å–æ£‹å­å’Œ board çš„ä½ç½®
+        # »ñÈ¡Æå×ÓºÍ board µÄÎ»ÖÃ
         piece_x, piece_y, board_x, board_y = find_piece_and_board(im)
-        ts = int(time.time())
-        print(ts, piece_x, piece_y, board_x, board_y)
+        ts = time.time()
+        print(str(ts - pre_ts) + "s", ts, piece_x, piece_y, board_x, board_y)
         set_button_position(im)
         jump(math.sqrt((board_x - piece_x) ** 2 + (board_y - piece_y) ** 2))
         if DEBUG_SWITCH:
@@ -235,16 +237,16 @@ def main():
         im.close()
         i += 1
         if i == next_rest:
-            print('å·²ç»è¿ç»­æ‰“äº† {} ä¸‹ï¼Œä¼‘æ¯ {}s'.format(i, next_rest_time))
+            print('ÒÑ¾­Á¬Ğø´òÁË {} ÏÂ£¬ĞİÏ¢ {}s'.format(i, next_rest_time))
             for j in range(next_rest_time):
-                sys.stdout.write('\rç¨‹åºå°†åœ¨ {}s åç»§ç»­'.format(next_rest_time - j))
+                sys.stdout.write('\r³ÌĞò½«ÔÚ {}s ºó¼ÌĞø'.format(next_rest_time - j))
                 sys.stdout.flush()
                 time.sleep(1)
-            print('\nç»§ç»­')
+            print('\n¼ÌĞø')
             i, next_rest, next_rest_time = (0, random.randrange(30, 100),
                                             random.randrange(10, 60))
-        # ä¸ºäº†ä¿è¯æˆªå›¾çš„æ—¶å€™åº”è½ç¨³äº†ï¼Œå¤šå»¶è¿Ÿä¸€ä¼šå„¿ï¼Œéšæœºå€¼é˜² ban
-        time.sleep(random.uniform(0.9, 1.2))
+        # ÎªÁË±£Ö¤½ØÍ¼µÄÊ±ºòÓ¦ÂäÎÈÁË£¬¶àÑÓ³ÙÒ»»á¶ù£¬Ëæ»úÖµ·À ban
+        time.sleep(random.uniform(0.4375, 0.9))#0.9-1.2
 
 
 if __name__ == '__main__':
