@@ -148,13 +148,13 @@ def find_piece_and_board(im):
         for j in range(int(board_x_start), int(board_x_end)):
             pixel = im_pixel[j, i]
             # 修掉脑袋比下一个小格子还高的情况的 bug
-            if abs(j - piece_x) < piece_body_width:
+            if abs(j - piece_x) < piece_body_width: #如果当前位置是跳棋自身的话，便忽略
                 continue
 
             # 修掉圆顶的时候一条线导致的小 bug，这个颜色判断应该 OK，暂时不提出来
             if abs(pixel[0] - last_pixel[0]) \
                     + abs(pixel[1] - last_pixel[1]) \
-                    + abs(pixel[2] - last_pixel[2]) > 10: #扫描下一跳棋盘的位置的条件，RGB像素差的和不大于10
+                    + abs(pixel[2] - last_pixel[2]) > 10: #扫描下一跳棋盘的位置的条件，RGB像素差的和大于10，意思就是和底色（last_pixel）的颜色不一样的是下一跳的棋盘颜色
                 board_x_sum += j #w方向上的位置和
                 board_x_c += 1#记录满足条件的像素点的个数
         if board_x_sum:
