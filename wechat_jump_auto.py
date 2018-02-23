@@ -119,16 +119,17 @@ def find_piece_and_board(im):
             # 色这样应该 OK，暂时不提出来
             if (50 < pixel[0] < 60) \
                     and (53 < pixel[1] < 63) \
-                    and (95 < pixel[2] < 110):
-                piece_x_sum += j
-                piece_x_c += 1
-                piece_y_max = max(i, piece_y_max)
+                    and (95 < pixel[2] < 110):#该颜色是跳棋的底部部分的RGB颜色范围值
+                piece_x_sum += j #w方向的像素的和
+                piece_x_c += 1 #记录满足的像素的个数
+                piece_y_max = max(i, piece_y_max) #h方向的最大值
 
-    if not all((piece_x_sum, piece_x_c)):
+    if not all((piece_x_sum, piece_x_c)):#判断 w方向的像素和、满足条件的像素的个数不都是0
         return 0, 0, 0, 0
-    piece_x = int(piece_x_sum / piece_x_c)
-    piece_y = piece_y_max - piece_base_height_1_2  # 上移棋子底盘高度的一半
-
+    piece_x = int(piece_x_sum / piece_x_c) #计算 w方向的满足条件的像素的平均值，结果为整数
+    piece_y = piece_y_max - piece_base_height_1_2  #将在h方向上得到的跳棋的位置 上移 棋子底盘高度的一半
+    #piece_x和piece_y便是跳棋的位置
+    
     # 限制棋盘扫描的横坐标，避免音符 bug
     if piece_x < w/2:
         board_x_start = piece_x
@@ -139,7 +140,7 @@ def find_piece_and_board(im):
 
     for i in range(int(h / 3), int(h * 2 / 3)):
         last_pixel = im_pixel[0, i]
-        if board_x or board_y:
+        if board_x or board_y: #如果找到了下一跳的棋子的w方向的平均值便退出
             break
         board_x_sum = 0
         board_x_c = 0
@@ -153,12 +154,12 @@ def find_piece_and_board(im):
             # 修掉圆顶的时候一条线导致的小 bug，这个颜色判断应该 OK，暂时不提出来
             if abs(pixel[0] - last_pixel[0]) \
                     + abs(pixel[1] - last_pixel[1]) \
-                    + abs(pixel[2] - last_pixel[2]) > 10:
-                board_x_sum += j
-                board_x_c += 1
+                    + abs(pixel[2] - last_pixel[2]) > 10: #扫描下一跳棋盘的位置的条件，RGB像素差的和不大于10
+                board_x_sum += j #w方向上的位置和
+                board_x_c += 1#记录满足条件的像素点的个数
         if board_x_sum:
-            board_x = board_x_sum / board_x_c
-    last_pixel = im_pixel[board_x, i]
+            board_x = board_x_sum / board_x_c #计算w方向的平均值
+    last_pixel = im_pixel[board_x, i] #退出后记录当前认为的下一跳棋子的位置
 
     # 从上顶点往下 +274 的位置开始向上找颜色与上顶点一样的点，为下顶点
     # 该方法对所有纯色平面和部分非纯色平面有效，对高尔夫草坪面、木纹桌面、
@@ -167,17 +168,17 @@ def find_piece_and_board(im):
         pixel = im_pixel[board_x, k]
         if abs(pixel[0] - last_pixel[0]) \
                 + abs(pixel[1] - last_pixel[1]) \
-                + abs(pixel[2] - last_pixel[2]) < 10:
+                + abs(pixel[2] - last_pixel[2]) < 10:#这里居然找到一个点便退出？
             break
-    board_y = int((i+k) / 2)
+    board_y = int((i+k) / 2) #由于上面循环在w方向上取得的是最大值k，取中间点(i+k)/2一般会正好碰到下一跳棋盘的中心。
 
     # 如果上一跳命中中间，则下个目标中心会出现 r245 g245 b245 的点，利用这个
     # 属性弥补上一段代码可能存在的判断错误
     # 若上一跳由于某种原因没有跳到正中间，而下一跳恰好有无法正确识别花纹，则有
     # 可能游戏失败，由于花纹面积通常比较大，失败概率较低
-    for j in range(i, i+200):
+    for j in range(i, i+200):#寻找白色中心点
         pixel = im_pixel[board_x, j]
-        if abs(pixel[0] - 245) + abs(pixel[1] - 245) + abs(pixel[2] - 245) == 0:
+        if abs(pixel[0] - 245) + abs(pixel[1] - 245) + abs(pixel[2] - 245) == 0:#进一步确保可以得到中心点（当有中心点存在的时候，管用，但是中心点不一定是白色的点！！）
             board_y = j + 10
             break
 
